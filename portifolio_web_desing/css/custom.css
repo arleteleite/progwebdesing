@@ -1,0 +1,255 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body, html{
+    font-family: 'Roboto', sans-serif;
+}
+#capa{
+    background: url(../imagens/slider.svg) no-repeat center center fixed;
+    background-size: cover;
+    width: 100vw;
+    height: 100vh;
+}
+
+#header{
+    width: 100%;
+    justify-content: space-between;
+    background-color: transparent;
+    transition: background ease-out 0.2s;
+    
+}
+#header.active{
+    position: fixed;
+    background-color: #fff;
+    box-shadow: 0 0 30px 0 rgba(0, 0, 0, 0.2);
+    z-index: 9999;
+}
+
+#header .navbar-collapse{
+    width: auto;
+}
+
+#header .nav-link{
+    text-transform: uppercase;
+    font-weight: 500;
+    padding: 0%;
+    margin: 15px;
+    color: var(--corprimary);
+    border-bottom: solid 4px transparent;
+}
+
+#header .nav-link:hover{
+    border-bottom: solid 4px var(--corsecundary);
+    color: var(--corsecundary);
+}
+
+#sobre h1{
+    text-transform: uppercase;
+    font-weight: 900;
+}
+
+#sobre h4{
+    text-transform: uppercase;
+    font-weight: 18px;
+}
+
+#animation{
+    transition: 500ms;
+}
+
+#arrow{
+    cursor:pointer;
+    animation: blink 1s steps(5, start) infinite;
+}
+
+@keyframes blink {
+    to{
+        visibility: hidden;
+    }
+}
+
+.rotate{
+    transform: rotate(180deg);
+    transition: 200ms;
+}
+
+.ative{
+    display: block !important;
+}
+
+
+#projetos a.destaque{
+    display: block;
+    background-color: var(--corlight);
+    border-radius: 5px;
+    text-align: justify;
+    padding: 30px;
+    color: var(--corprimarydark);
+    text-decoration: none;
+    transition: all ease-out 0.2s;
+}
+#projetos a.destaque h5.subtitle{
+    text-align: center;
+    color: var(--corprimary);
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+#projetos a.destaque:hover{
+    background-color: white;
+    box-shadow: 0px 0px 10px 0px;
+    transform: scale(1.005);
+}
+
+#projetos a.destaque .img-container{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 200px;
+}
+
+#projetos a.destaque .img-container img{
+    max-height: 190px;
+}
+
+#portifolio a.link-portifolio{
+    padding: 0 15px;
+   /* background: var(--corlight);*/
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: solid 1px var(--corlight);
+    height: 180px;
+    transition: ease-out all 0.2s;
+}
+
+#portifolio a.link-portifolio:hover{
+    transform: scale(1.009);
+    box-shadow: 0 0 15px 0 rgba(0, 0, 0, 0.2);
+}
+
+#portifolio a.link-portifolio img{
+    filter: grayscale(100%);
+    max-height: 140px;
+    width: 100%;
+    opacity: 0.6;
+}
+
+#portifolio a.link-portifolio:hover img{
+    filter: none;
+    opacity: 1;
+}
+
+#portifolio .portifolio-texto{
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 30px;
+    /*background-color: var(--corlight);*/
+}
+
+#portifolio .portifolio-texto .img{
+    padding: 60px 0;
+    display: flex;
+    align-items: center;
+    margin-left: 20px;
+    color: black;
+    font-size: 24px;
+    line-height: 26px;
+}
+#portifolio .portifolio-texto .img span{
+    color: var(--corsecundary);
+    font-size: 110px;
+    line-height: 110px;
+    letter-spacing: -10px;
+    font-weight: 900;
+    display: block;
+    max-width: 120px;
+    max-height: 100px;
+}
+
+#portifolio .portifolio-texto .telefone{
+    display: flex;
+    font-size: 14px;
+    color: var(--corprimarydark);
+}
+#portifolio .portifolio-texto span img{
+    max-width: 80px;
+    max-height: 80px;
+}
+#portifolio .portifolio-texto .telefone span{
+    color: var(--corsecundary);
+    font-size: 25px;
+    font-weight: 900;
+    display: block;
+
+}
+
+#contato .email{
+    border-radius: 5px;
+    background-color: var(--corprimary);
+    color: white;
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 120 px 30 px;
+}
+
+#contato .email img{
+    position: absolute;
+    left: 30px;
+    top: -70px;
+}
+
+#contato .email form{
+    width: 60%;
+    display: flex;
+}
+#contato .email .form-control{
+    background: none;
+    color: #fff;
+}
+
+#contato .email .form-control,
+#contato .email .form-control::placeholder{
+    background: none;
+    color: #fff;
+}
+
+#contato ul{
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: flex-end;
+}
+#contato ul li{
+    display: flex;
+    list-style-type: none;
+    margin-left: 25px;
+}
+#contato ul li:first-child{
+    margin-left: 0;
+}
+#contato ul li a{
+    display: flex;
+    width: 40px;
+    height: 40px;
+    border-radius: 20px;
+    justify-content: center;
+    align-items: center;
+    background-color: transparent;
+    transition: all ease-out 0.2s;
+}
+
+#contato ul li a:hover{
+    box-shadow: 0 0 10px 0 rgba(0, 0, 0, 0.4);
+    background-color: #fff;
+}
+#contato ul li img{
+    max-width: 30px;
+    max-height: 30px;
+    filter: grayscale(100%);
+}

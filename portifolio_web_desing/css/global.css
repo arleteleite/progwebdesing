@@ -1,0 +1,53 @@
+h1, h2, h3, h4, h5, h6{
+    font-weight: 700;  
+}
+.title{
+    text-transform: uppercase;
+    color: var(--corprimary);
+}
+
+.subtitle{
+    color: var(--cormedium);
+    font-weight: 400;
+}
+
+.block{
+    margin-bottom: 80px;
+}
+
+.button{
+    text-transform: lowercase;
+    font-weight: 400;
+    padding: 0rem 1.4rem;
+
+}
+
+a{
+    color: var(--corprimary);
+}
+
+a:hover{
+    color: var(--corsecundary);
+}
+
+.button-primary{
+    background-color: var(--corprimary);
+    border-color: var(--corprimary);
+}
+
+.button-primary:hover{
+    background-color: var(--corprimary-dark);
+    border-color: var(--corprimary-dark);
+}
+
+.button-secundary{
+    background-color: transparent;
+    border-color: var(--corprimary);
+    color: var(--corprimary);
+}
+
+.button-secundary:hover{
+    background-color: var(--corprimary);
+    border-color: var(--corprimary);
+}
+
